@@ -13,13 +13,151 @@
   </head>
   <body>
     <!-- Header -->
-    <header></header>
+    <header class="bg-gradient-to-b from-cyan-900 to-sky-900 flex items-center justify-between p-[16px]">
+      <!-- Logo -->
+      <div class="h-[60px] w-[60px]">
+        <img src="assets\logo.jpg" alt="Company Logo" class="rounded-full" />
+      </div>
+
+      <!-- Navigation -->
+      <nav>
+        <ul class="flex flex-wrap">
+          <li><a href="#home" class="text-sky-100 font-bold py-[4px] px-[8px] rounded-[8px] hover:text-blue-200">Home</a></li>
+          <li><a href="#profile" class="text-sky-100 font-bold py-[4px] px-[8px] rounded-[8px] hover:text-blue-200">Our Profile</a></li>
+          <li><a href="#portfolio" class="text-sky-100 font-bold py-[4px] px-[8px] rounded-[8px] hover:text-blue-200">Portfolio</a></li>
+          <li><a href="#message" class="text-sky-100 font-bold py-[4px] px-[8px] rounded-[8px] hover:text-blue-200">Message Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr class="border-sky-900 "/>
 
     <!-- Content -->
-    <main></main>
+    <main>
+      <!-- Home -->
+      <section id="home" class="min-h-[400px] p-[8px] bg-[url('assets/home.jpg')] bg-cover bg-center">
+        <div class="flex items-center justify-center min-h-[400px]">
+          <h1 class="text-cyan-100 text-4xl text-center font-bold">Hello <span id="user"><u>User</u></span>! Welcome to Our Portfolio!</h1>
+        </div>
+      </section>
+
+      <hr class="border-sky-900"/>
+
+      <!-- Profile -->
+      <section id="profile" class="min-h-[400px] p-[16px] bg-gradient-to-b from-sky-900 to-cyan-600">
+        <h1 class="text-sky-100 text-3xl font-semibold">Our Profile</h1>
+        <p class="text-sky-100 mt-[8px] text-justify">Our Company is a specialized 3D design studio dedicated to engineering product design and industrial visualization. We work at the intersection of creativity and technical accuracy, transforming complex concepts into precise, manufacturable, and visually compelling 3D models.</p>
+        <p class="text-sky-100 mt-[8px] text-justify">From concept ideation to fully detailed CAD-ready 3D models and high-fidelity product renders, our team of designers and engineers supports innovators, manufacturers, and R&D teams in bringing new products to life. Our designs are not only visually impactful, they are engineered for function, form, and feasibility.</p>
+        
+        <!-- Vison -->
+        <h2 class="text-sky-100 mt-[16px] text-xl font-semibold">Vision</h2>
+        <p class="text-sky-100 mt-[8px] text-justify">To revolutionize the engineering design process by providing world-class 3D design services that accelerate innovation, enhance clarity, and reduce time to market for engineering-driven products.</p>
+
+        <!-- Mission -->
+        <h2 class="text-sky-100 mt-[16px] text-xl font-semibold">Mission</h2>
+        <p class="text-sky-100 mt-[8px] text-justify">Our mission is to empower engineering teams, startups, and manufacturers with precise, intelligent, and production-ready 3D design solutions. We aim to bridge the gap between concept and reality by combining design aesthetics with functional engineering expertise.</p>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="text-center min-h-sm max-h-lg p-[16px] bg-gradient-to-b from-cyan-600 to-cyan-100">
+        <header>
+          <h1 class="text-sky-100 text-3xl font-bold">Portfolio</h1>
+        </header>
+        <p class="text-sky-100 mt-[8px]">Check out some of our recent projects.</p>
+        <div class="grid grid-cols-3 gap-[16px] mt-[16px]">
+          <!-- Project 1 -->
+          <div class="bg-sky-100 p-[8px] rounded-lg shadow-lg border border-sky-500">
+            <img src="assets\vase.png" alt="Air Purifier Vase" class="w-full object-cover rounded-lg" />
+            <h3 class="text-lg font-semibold mt-[8px] text-sky-900">Air Purifier Vase</h3>
+            <p class="text-sky-800 mt-[4px]">An innovative vase design that combines functionality with modern aesthetics.</p>
+          </div>
+          <!-- Project 2 -->
+          <div class="bg-sky-100 p-[8px] rounded-lg shadow-lg border border-sky-500">
+            <img src="assets\loco.png" alt="Locomotive Model" class="w-full object-cover rounded-lg" />
+            <h3 class="text-lg font-semibold mt-[8px] text-sky-900">Locomotive Model</h3>
+            <p class="text-sky-800 mt-[4px]">A detailed 3D model of The Dutch Railway Series 5500.</p>
+          </div>
+          <!-- Project 3 -->
+          <div class="bg-sky-100 p-[8px] rounded-lg shadow-lg border border-sky-500">
+            <img src="assets\zapper.png" alt="Bug Zapper" class="w-full object-cover rounded-lg" />
+            <h3 class="text-lg font-semibold mt-[8px] text-sky-900">Bug Zapper</h3>
+            <p class="text-sky-800 mt-[4px]">A modern bug zapper design with ergonomic features and aesthetic appeal.</p>
+      </section>
+
+      <!-- Message Us -->
+      <section class="min-h-[400px] p-[16px] bg-gradient-to-b from-cyan-100 to-yellow-200">
+        <header>
+        <h1 class="text-sky-900 text-3xl font-bold">Message Us</h1>
+        <p class="text-sky-900 my-[8px]">We would love to hear from you! Please fill out the form below to get in touch.</p>
+        </header>
+        <div class="flex flex-col md:flex-row gap-[16px]">
+        <!-- Form -->
+        <div class="w-full bg-white p-[16px] rounded-lg shadow-lg border border-sky-500">
+          <h2 class="text-sky-900 text-xl font-semibold">Contact Form</h2>
+        <form id="form" class="mt-[16px]">
+          <!-- Name -->
+          <div class="mb-[8px]">
+            <label for="name" class="block text-sky-900 font-semibold">Name:</label>
+            <input type="text" placeholder="Name" id="name" name="name" class="w-full p-[8px] border border-sky-500 rounded-lg" required />
+          </div>
+          <!-- Birth -->
+          <div class="mb-[8px]">
+            <label for="birthdate" class="block text-sky-900 font-semibold">Birthdate:</label>
+            <input type="date" id="birth" name="birthdate" class="w-full p-[8px] border border-sky-500 rounded-lg" required />
+          </div>
+          <!-- Gender -->
+          <div class="mb-[8px]">
+            <span for="gender" class="block text-sky-900 font-semibold mb-[8px]">Gender:</span>
+            <div class="flex flex-row gap-[16px]">
+              <input type="radio" id="male" name="gender" class="w-[16px] p-[8px] rounded-lg" required />
+              <label for="female" class="text-sky-500">Male</label>
+              <input type="radio" id="female" name="gender" class="w-[16px] p-[8px] rounded-lg" required />
+              <label for="male" class="text-sky-500">Female</label>
+            </div>
+          </div>
+          <!-- Message Box -->
+          <div class="mb-[8px]">
+            <label for="message" class="block text-sky-900 font-semibold">Message:</label>
+            <textarea id="message" placeholder="Type your message here..." name="message" rows="4" class="w-full p-[8px] border border-sky-500 rounded-lg"></textarea>
+          </div>
+          <!-- Button -->
+          <button type="submit" id="button" onclick="sendMessage()" class="bg-sky-900 text-white py-[8px] px-[16px] rounded-lg hover:bg-sky-800">Send Message</button>
+        </form>
+        </div>
+
+        <!-- Info -->
+        <div class="w-full bg-white p-[16px] rounded-lg shadow-lg border border-sky-500">
+          <p>
+                <span class="text-sky-900 font-bold">Current time:</span>
+                <span id="currentTime" class="text-sky-500">8/16/2025, 9:35:23 AM</span>
+              </p>
+          <hr class="my-[8px] border-sky-500"/>
+          <h2 class="my-[8px] text-sky-900 text-xl font-semibold">Messages</h2>
+          <p>
+                <span class="text-sky-900 font-bold">Name:</span>
+                <span id="msgName" class="text-sky-500"></span>
+              </p>
+          <p>
+                <span class="text-sky-900 font-bold">Birthdate:</span>
+                <span id="msgBirth" class="text-sky-500"></span>
+              </p>
+          <p>
+                <span class="text-sky-900 font-bold">Gender:</span>
+                <span id="msgGender" class="text-sky-500"></span>
+              </p>
+          <p>
+                <span class="text-sky-900 font-bold">Message:</span>
+                <span id="msgMessage" class="text-sky-500"></span>
+              </p>
+        </div>
+      </section>
+    </main>
+
+    <hr class="border-yellow-900"/>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer class="bg-yellow-900 text-white p-[16px] text-center">
+      <span class="text-white font-bold">Copyright © 2025 Refky. All rights reserved.</span>
+    </footer>
 
     <!-- JS -->
     <script src="js\script.js"></script>
